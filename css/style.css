@@ -1,7 +1,20 @@
-h1 {
-    text-align: center;
+html {
+    font-size: 62.5%;
 }
 
-nav {
-    text-align: center;
+body {
+    font-size: 16px;
 }
+
+/* con esta configuracion
+   1rem = 10px*/
+
+.titulo {
+    text-align: center;
+    font-size: 3.8rem; /* 3.8 rem = 38 px adaptables*/
+}
+
+.titulo span {
+    font-size: 2rem;
+}
+
