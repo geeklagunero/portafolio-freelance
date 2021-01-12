@@ -31,3 +31,33 @@ body {
     font-size: 2rem;
 }
 
+.nav-bg {
+    background-color: var(--secundario);
+}
+
+.contenedor {
+    width: 120rem;
+    margin: 0 auto;
+}
+
+.navegacion-principal {
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.navegacion-principal  a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem;
+} 
+
+.navegacion-principal  a:hover {
+    background-color: var(--primario);
+    color: var(--obscuro);
+}
+
+
+
