@@ -12,7 +12,12 @@
 
 html {
     font-size: 62.5%;
+    box-sizing: border-box;
 }
+
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
 
 body {
     font-size: 16px;
@@ -74,6 +79,9 @@ body {
     background-repeat: no-repeat;
     /* toma todo el ancho disponible del contendor*/
     background-size: cover;
+    height: 450px;
+    padding: 20px;
+    text-align: center;
 }
 
 
