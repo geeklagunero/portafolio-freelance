@@ -1,5 +1,5 @@
 
-
+/* Globales */
 :root {
     --blanco: #ffffff;
     --obscuro: #212121;
@@ -23,6 +23,8 @@ body {
     font-size: 16px;
     font-family: 'Krub', sans-serif;
 }
+
+/* Titulos */
 
 h1 {
     font-size: 3.8rem;
@@ -55,6 +57,27 @@ h1, h2, h3 {
 .contenedor {
     max-width: 120rem;
     margin: 0 auto;
+}
+
+.boton {
+    background-color: var(--secundario);
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: .5rem;
+    width: 90%;
+    text-align: center;
+
+}
+
+@media (min-width: 768px){
+    .boton {
+        width: auto;
+    }
 }
 
 .navegacion-principal {
