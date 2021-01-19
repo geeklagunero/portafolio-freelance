@@ -247,6 +247,7 @@ h1, h2, h3 {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto 20rem;
         column-gap: 1rem;
+        margin-bottom: 2rem;
     }
 
     .campo:nth-child(3), 
