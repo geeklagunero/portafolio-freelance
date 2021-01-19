@@ -22,6 +22,27 @@ html {
 body {
     font-size: 16px;
     font-family: 'Krub', sans-serif;
+    background-image: linear-gradient(to top, #dfe9f3 0%, var(--blanco) 100%)
+}
+
+/* utilidades */
+
+.w-sm-100{
+    width: 100%;
+}
+
+@media (min-width: 768px){
+    .w-sm-100{
+        width: auto;
+    }
+}
+
+.flex {
+    display: flex;
+}
+
+.alinear-derecha {
+    justify-content: flex-end;
 }
 
 /* Titulos */
@@ -40,6 +61,15 @@ h3{
 
 h1, h2, h3 {
     text-align: center;
+}
+
+.sombra {
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(92,89,92,0.6);
+    -moz-box-shadow: 0px 5px 15px 0px rgba(92,89,92,0.6);
+    box-shadow: 0px 5px 15px 0px rgba(92,89,92,0.6);
+    background-color: var(--blanco);
+    padding: 2rem;
+    border-radius: 1rem;
 }
 
 /* con esta configuracion
@@ -71,7 +101,11 @@ h1, h2, h3 {
     border-radius: .5rem;
     width: 90%;
     text-align: center;
+    border: none;
+}
 
+.boton:hover {
+    cursor: pointer;
 }
 
 @media (min-width: 768px){
@@ -115,8 +149,8 @@ h1, h2, h3 {
     /* toma todo el ancho disponible del contendor*/
     background-size: cover;
     height: 450px;
-    
     position: relative;
+    margin-bottom: 2rem;
 }
 
 .contenido-hero {
@@ -143,8 +177,90 @@ h1, h2, h3 {
 .ubicacion {
     display: flex;
     align-items: flex-end;
+
+}
+ 
+@media (min-width: 768px) {
+    .servicios {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        /* son iguales estas tres sintaxis
+        grid-template-columns: 1fr, 1fr, 1fr;
+        grid-template-columns: 33.33%, 33.33%, 33.33%;*/
+        column-gap: 5rem;
+    }
 }
 
+.servicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
+}
+
+.servicio h3 {
+    color: var(--secundario);
+    font-weight: normal;
+}
+
+.servicio p {
+    line-height: 2;
+    text-align: center;
+}
+
+.servicio .iconos{
+    height: 15rem;
+    width: 15rem;
+    background-color: var(--primario);
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.formulario {
+    background-color: var(--gris);
+    width: min(60rem, 100%); /*funcion que hace que un elemento se vea de diferentes tamaño dependiendo la pantalla en que se vea*/
+    margin: 0 auto; /*se usa para centrar elementos si no estan en flex*/
+    padding: 2rem;
+    border-radius: 1rem;
+    
+
+}
+
+.formulario fieldset {
+    border: none;
+}
+
+.formulario legend {
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--primario);
+}
+
+.campos {
+
+}
+
+.campo {
+ margin-bottom: 1rem;
+}
+
+.campo label {
+ color: var(--blanco);
+ font-weight: bold;
+ margin-bottom: .5rem;
+ display: block;
+}
+
+.input-text {
+    width: 100%;
+    border: none;
+    padding: 1.5rem;
+    border-radius: .5rem;
+}
 
 
